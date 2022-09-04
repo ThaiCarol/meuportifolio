@@ -1,0 +1,31 @@
+.work-list{
+    row-gap: 3rem;
+}
+.work-item{
+    position: relative;
+}
+/* .work-item::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 0;
+    height: 0;
+    transition: var(--transition);
+} */
+
+@media screen and (min-width: 678px) {
+    .work-list{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .work-list{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
+}
